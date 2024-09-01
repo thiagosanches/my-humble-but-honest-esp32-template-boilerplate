@@ -30,6 +30,14 @@ I have a private Telegram group where I receive notifications, and I've created 
 
 ![alt text](image-5.png)
 
+### Where should I put my code, exactly?
+
+Immediately following the comment that says:
+
+```c
+// Insert your custom code below, leaving the code above unchanged.
+```
+
 ### TODOs
 
 There are many areas for improvement, but this template provides a solid foundation that I can start using and build upon as needed. For now, I've identified the following areas for implementation:
