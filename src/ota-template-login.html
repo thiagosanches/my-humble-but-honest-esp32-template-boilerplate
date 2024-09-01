@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: linear-gradient(to bottom right, #6c5ce7, #a85eea);
+            background-size: 100%100%;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-form {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form form {
+            margin-bottom: 20px;
+        }
+
+        .login-form.form-control {
+            margin-bottom: 20px;
+        }
+
+        .login-form.btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="form-group"><input type="text" class="form-control" id="username" placeholder="Username"
+                    required></div>
+            <div class="form-group"><input type="password" class="form-control" id="password" placeholder="Password"
+                    required></div>
+            <div id="error-message" class="error-message"></div><button type="submit" class="btn
+                btn-primary">Login</button>
+        </form>
+    </div>
+    <script>const form = document.getElementById('login-form'); const usernameInput = document.getElementById('username'); const passwordInput = document.getElementById('password'); const errorMessage = document.getElementById('error-message'); form.addEventListener('submit', (e) => { e.preventDefault(); const username = usernameInput.value.trim(); const password = passwordInput.value.trim(); if (username === 'admin' && password === 'W!!!Iy!Ai!7a2!r_O_TY') { window.open('/serverIndex'); } else { errorMessage.textContent = 'Invalid username or password'; } });</script>
+</body>
+
+</html>
